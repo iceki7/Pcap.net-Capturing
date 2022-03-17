@@ -92,7 +92,7 @@ namespace InterpretingThePackets
             String data = ip.Udp.Payload.Decode(System.Text.Encoding.ASCII);
 
             // print ip addresses and udp ports
-            Console.WriteLine(ip.Source + ":" + udp.SourcePort + " -> " + ip.Destination + ":" + udp.DestinationPort+"| data= "+data);
+            Console.WriteLine("【"+ip.Source + ":" + udp.SourcePort + "】 -> 【" + ip.Destination + ":" + udp.DestinationPort+"】 \n"+data+"\n———————————————————\n");
         }
     }
 }
